@@ -1,0 +1,106 @@
+* {
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+
+  /* ----------------- COLORS ----------------- */
+
+  --color-primary-black: #000000;
+  --color-primary-white: #FFFFFF;
+  --color-secondary-gray: #E8E8E8;
+  --color-secondary-medium-gray: #585858;
+  --color-secondary-dark-gray: #1C1C1C;
+
+  /* ----------------- FONT FAMILIES ----------------- */
+
+  --font-body: "Palanquin", sans-serif;
+  --font-title: "Bebas Neue", sans-serif;
+  --font-prize: "Radio Canada Big";
+
+  /* ----------------- SIZES ----------------- */
+
+  --font-body-size: 16px;
+  --font-prize-size: 25px;
+  --font-discount-size: 10px;
+  --font-h1-size: 60px;
+  --font-h2-size: 48px;
+  --font-h3-size: 28px;
+  --font-h4-size: 20px;
+
+  /* ----------------- WEIGHTS ----------------- */
+
+  --font-body-weight: 500;
+  --font-prize-weight: 700;
+  --font-title-weight: 400;
+
+}
+
+.btn-primary {
+  padding: 5px 80px;
+  background-color: var(--color-primary-black);
+  color: var(--color-primary-white);
+  border-radius: 8px;
+  font-family: var(--font-title);
+  font-size: var(--font-h3-size);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  padding: 5px 80px;
+  color: var(--color-primary-black);
+  background-color: var(--color-primary-white);
+  border-radius: 10px;
+  font-family: var(--font-title);
+  font-size: var(--font-h3-size);
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/*-----------------------STYLE DAS PÁGINAS DE ROUPAS-----------------------*/
+
+.page-menu h2 {
+  font-family: var(--font-title);
+  font-size: var(--font-h2-size);
+  font-weight: var(--font-title-weight);
+  padding: 30px;
+}
+
+.container-page-menu {
+  display: grid;
+  width: 1350px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 0px 0px 40px 0px;
+}
+
+.page-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*-----------------------RESPONSIVIDADE GLOBAL-----------------------*/
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 34px !important;
+  }
+
+  .container-page-menu {
+        grid-template-columns: repeat(2, 1fr);
+        width: auto;
+        gap: 20px;
+  }
+
+}

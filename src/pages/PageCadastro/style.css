@@ -1,0 +1,167 @@
+.cadastro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.cadastro-container h2 {
+    padding: 40px 0 0;
+    text-decoration: underline 2px;
+    text-underline-offset: 10px;
+    font-family: var(--font-title);
+    font-size: var(--font-h2-size);
+    font-weight: var(--font-title-weight);
+}
+
+
+.cadastro-container p {
+    font-family: var(--font-body);
+}
+
+
+
+.copyright-cadastro {
+    font-family: var(--font-body);
+    font-weight: var(--font-body-weight);
+}
+
+.form-cadastro {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 40px;
+    padding: 40px;
+}
+
+.coluna-info-contatos {
+    display: flex;
+    justify-content: end;
+    width: 580px;
+}
+
+.form-cadastro h3 {
+    font-family: var(--font-body);
+    font-size: var(--font-h3-size);
+    font-weight: var(--font-title-weight);
+}
+
+
+
+label {
+    display: flex;
+    font-family: var(--font-body);
+    font-size: var(--font-body-size);
+}
+
+
+
+.senhas input {
+    width: 245px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: var(--color-secondary-gray);
+
+}
+
+
+.nome-email input {
+
+    width: 425px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: var(--color-secondary-gray);
+
+}
+
+.contatos {
+    padding: 40px 0px;
+}
+
+.contatos input {
+    width: 245px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: var(--color-secondary-gray);
+}
+
+.coluna-endereco input {
+    width: 425px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: var(--color-secondary-gray);
+
+}
+
+.cep input {
+    width: 240px;
+    height: 40px;
+}
+
+.numero input {
+    width: 130px;
+    height: 40px;
+
+}
+
+.complemento input {
+    width: 385px;
+    height: 40px;
+}
+
+.coluna-endereco button {
+    border-radius: 10px;
+    font-family: var(--font-title);
+    font-size: 28px;
+    width: 580px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.btn-class {
+    padding: 40px 0px;
+
+}
+
+@media (max-width: 480px) {
+    .form-cadastro {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .cadastro-container h2 {
+        padding: 20px 0 0;
+    }
+
+
+    .coluna-info-contatos,
+    .coluna-endereco {
+        width: 100%;
+    }
+
+    .nome-email input,
+    .coluna-endereco input {
+        width: 100%;
+    }
+
+    .senhas input,
+    .contatos input,
+    .cep input,
+    .numero input,
+    .complemento input {
+        width: 100%;
+    }
+
+    .coluna-endereco button {
+        width: 100%;
+    }
+}
