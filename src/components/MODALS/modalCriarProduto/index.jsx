@@ -18,7 +18,7 @@ export const ModalCriarProduto = ({open, close}) => {
             valor: valor,
         }
 
-        axios.post('http://localhost:8081/cadastrar', novoProduto)
+        axios.post('https://code-project-backend.onrender.com/cadastrar', novoProduto)
             .then((res) => console.log(res))
             .catch((err) => console.log(err))
     }
@@ -41,7 +41,7 @@ export const ModalCriarProduto = ({open, close}) => {
                         <input type="text" placeholder='Ex: 79,99' value={valor} onChange={(e) => setValor(e.target.value)}/>
                     </div>
                     
-                    <button className='btn-secondary , btn-cadastro-de-musica' onClick={() => cadastro()}> Cadastrar </button>
+                    <button type='button' className='btn-secondary , btn-cadastro-de-musica' onClick={(e) => { e.preventDefault(); cadastro() }}> Cadastrar </button>
                 </form>
                 
             </div>

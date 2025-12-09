@@ -4,6 +4,10 @@
     align-items: center;
     transition: 0.3s;
     cursor: pointer;
+    width: fit-content;
+    margin: 0 auto;
+    color: var(--color-primary-white);
+    text-decoration: none;
 }
 
 .cardroupa-branco:hover {
@@ -19,7 +23,13 @@
     display: flex;
     justify-content: space-between;
     width: 300px;
-    padding: 15px;
+    padding: 15px 15px 10px;
+}
+
+.nome-e-preco-branco {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
 
 .nome-roupa-branco {
@@ -57,10 +67,11 @@
 @media (max-width: 480px) {
 
 
-    .cardroupa-branco{
+    .cardroupa-branco {
         width: 200px;
         height: auto;
     }
+
     .imagem-roupa-branco {
         width: 200px;
     }

@@ -7,6 +7,7 @@ import { Main } from '../../components/layout/main'
 import { SectionMenu } from '../../components/layout/section-menu'
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
+import { ModoDeus } from '../../components/modoDeus'
 
 
 export const Home = () => {
@@ -29,6 +30,7 @@ export const Home = () => {
             <SectionMenu/>
             <SectionOfertas/>
             <SectionInverno/>
+            <ModoDeus/>
             <SemiFooter/>
         </>
     )

@@ -1,15 +1,12 @@
-.section-music{
+.page-menu{
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
     align-items: center;
     text-align: center;
     padding: 60px 0px;
 }
 
-.section-music h2{
-    color: #fff;
-}
 
 .container-cards{
     display: grid;

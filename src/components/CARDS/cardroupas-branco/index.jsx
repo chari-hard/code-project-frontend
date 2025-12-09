@@ -1,14 +1,16 @@
 import './style.css'
 import imagemCarrinho from '../../../assets/images/icon-sacola-branca.svg'
+import { Link } from 'react-router-dom'
+
 
 export const CardroupasBranco = ({imagemRoupa, nomeRoupa, descontoRoupa, precoRoupa}) => {
     return(
-        <div className='cardroupa-branco'>
+        <Link to="" className='cardroupa-branco'>
             <img src={imagemRoupa} alt={nomeRoupa} className='imagem-roupa-branco'/>
 
 
             <div className='roupa-content-branco'>
-                <div>
+                <div className='nome-e-preco-branco'>
                     <p className='nome-roupa-branco'>{nomeRoupa}</p>
 
                     <div className='prizes-branco'>
@@ -19,6 +21,6 @@ export const CardroupasBranco = ({imagemRoupa, nomeRoupa, descontoRoupa, precoRo
 
                 <img src={imagemCarrinho} alt="carrinho branco" />
             </div>
-        </div>
+        </Link>
     )
 }

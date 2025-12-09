@@ -33,8 +33,8 @@ export const PageAdmin = () => {
 
     return (
         <>
-            <section className="section-music">
-                <h2>Nossas músicas</h2>
+            <section className="page-menu">
+                <h2>TODOS OS PRODUTOS</h2>
                 <div className="container-page-menu">
 
                     {produtos.map((produto) => (
