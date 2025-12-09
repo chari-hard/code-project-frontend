@@ -5,8 +5,8 @@ import iconLupa from "../../../assets/images/iconLupa.svg"
 import logoCode from "../../../assets/images/logoCode.svg"
 import iconPerfil from "../../../assets/images/iconPerfil.svg"
 import iconSacola from "../../../assets/images/SACOLATESTE.svg"
-import OffCanvasCarrinho from "../../MODALS/offCanvasCarrinho";
-import OffCanvasPesquisa from '../../MODALS/offCanvasPesquisa'
+import OffCanvasCarrinho from "../../MODALS/offcanvasCarrinho";
+import OffCanvasPesquisa from "../../MODALS/offcanvasPesquisa"
 
 
 export const Header = () => {
