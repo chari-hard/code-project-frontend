@@ -5,7 +5,7 @@ import iconLupa from "../../../assets/images/iconLupa.svg"
 import logoCode from "../../../assets/images/logoCode.svg"
 import iconPerfil from "../../../assets/images/iconPerfil.svg"
 import iconSacola from "../../../assets/images/SACOLATESTE.svg"
-import OffCanvasCarrinho from "../../MODALS/offCanvasCarrinho";
+import OffCanvasCarrinho from "../../MODALS/OffCanvasCarrinho";
 import OffCanvasPesquisa from '../../MODALS/OffCanvasPesquisa'
 
 
