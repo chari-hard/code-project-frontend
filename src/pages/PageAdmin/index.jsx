@@ -27,22 +27,26 @@ export const PageAdmin = () => {
         setOpenCadastroDeProduto(false)
     }
 
+    const calcularPrecoAntigo = (preco, porcentagem) => {
+        return preco * (1 + porcentagem / 100);
+    };
+
     return (
         <>
             <section className="section-music">
                 <h2>Nossas músicas</h2>
-                <div className="container-cards">
+                <div className="container-page-menu">
 
-                    {produtos.map(({ imagemRoupa, nomeRoupa, descontoRoupa, precoRoupa }) => (
+                    {produtos.map((produto) => (
                         <Cardroupas
-                            imagemRoupa={imagemRoupa}
-                            nomeRoupa={nomeRoupa}
-                            descontoRoupa={descontoRoupa}
-                            precoRoupa={precoRoupa}
+                            imagemRoupa={produto.imagem}
+                            nomeRoupa={produto.nome}
+                            descontoRoupa={calcularPrecoAntigo(produto.valor, 20).toFixed(2)}
+                            precoRoupa={produto.valor}
                         />
                     ))}
                 </div>
-                <button className='btn-primary' onClick={() => abrirCadastroDeProduto()}>Cadastrar nova música</button>
+                <button className='btn-primary' onClick={() => abrirCadastroDeProduto()}>Cadastrar novo Produto</button>
             </section>
             <ModalCriarProduto open={openCadastroDeProduto} close={fecharModal} />
         </>

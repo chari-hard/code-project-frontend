@@ -1,7 +1,7 @@
 import './style.css'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
-import iconLupa from "../../../assets/images/iconlupa.svg"
+import iconLupa from "../../../assets/images/iconLupa.svg"
 import logoCode from "../../../assets/images/logoCode.svg"
 import iconPerfil from "../../../assets/images/iconPerfil.svg"
 import iconSacola from "../../../assets/images/SACOLATESTE.svg"
