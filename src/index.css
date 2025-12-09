@@ -48,6 +48,7 @@
   font-size: var(--font-h3-size);
   text-decoration: none;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .btn-secondary {
@@ -67,6 +68,10 @@
   cursor: pointer;
 }
 
+input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
 /*-----------------------STYLE DAS PÁGINAS DE ROUPAS-----------------------*/
 
 .page-menu h2 {

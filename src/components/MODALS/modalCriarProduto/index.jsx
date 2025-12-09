@@ -38,10 +38,10 @@ export const ModalCriarProduto = ({open, close}) => {
                     </div>
                     <div>
                         <label htmlFor="">Valor do Produto</label>
-                        <input type="text" placeholder='preço do produto' value={valor} onChange={(e) => setValor(e.target.value)}/>
+                        <input type="text" placeholder='Ex: 79,99' value={valor} onChange={(e) => setValor(e.target.value)}/>
                     </div>
                     
-                    <button className='btn' onClick={() => cadastro()}> Cadastrar </button>
+                    <button className='btn-secondary , btn-cadastro-de-musica' onClick={() => cadastro()}> Cadastrar </button>
                 </form>
                 
             </div>

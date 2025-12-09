@@ -11,7 +11,7 @@ export const PageAdmin = () => {
 
 
     useEffect(() => {
-        axios.get('')
+        axios.get('https://code-project-backend.onrender.com')
             .then((res) => {
                 console.log(res.data)
                 setProdutos(res.data)
@@ -42,7 +42,7 @@ export const PageAdmin = () => {
                         />
                     ))}
                 </div>
-                <button className='btn' onClick={() => abrirCadastroDeProduto()}>Cadastrar nova música</button>
+                <button className='btn-primary' onClick={() => abrirCadastroDeProduto()}>Cadastrar nova música</button>
             </section>
             <ModalCriarProduto open={openCadastroDeProduto} close={fecharModal} />
         </>
